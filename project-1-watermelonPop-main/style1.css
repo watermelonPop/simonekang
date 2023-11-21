@@ -1,0 +1,699 @@
+@font-face {
+        font-family: rosmatika;
+        src: url(rosmatika.ttf);
+}
+
+body{
+        position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    min-width:1300px;
+    width:100%;
+    overflow:auto;
+    padding:0;
+    margin:0;
+}
+
+.navbar{
+        background-color: #F5DEF0;
+        height: 9vh;
+        text-align: center;
+        padding-top: 20px;
+}
+
+.navLink{
+        color: black;
+        font-family: rosmatika;
+        font-size: 20px;
+        text-decoration: none;
+}
+
+#title{
+        font-family: rosmatika;
+        font-size: 40px;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+}
+
+#title:hover{
+        color:#370A25;
+}
+
+a+a {
+        margin-left: 9vw;
+}
+
+
+a.navLink:hover{
+        cursor: pointer;
+        color: #6B4663;
+        text-decoration: none;
+}
+
+.fixed-top{
+        position:fixed;
+        padding:0;
+        margin:0;
+        top:0;
+        left:0;
+        width: 100%;
+        z-index: 9999;
+}
+
+.qualTitle, .qualTitle-qual{
+        font-family: rosmatika;
+        font-size: 30px;
+        color: #F5DEF0;
+        padding-left: 20px;
+        padding-top: 55vh;
+}
+
+.scrollable, .scrollable-serv{
+        padding-top: 6vh;
+        width: 100%;
+        height: 1800px;
+        position: relative;
+        pointer-events: none;
+}
+
+.qualifDiv, .qualifDiv-about, .qualifDiv-port, .qualifDiv-serv{
+        width: 250px;
+        height: 100%;
+        background-color: #370A25;
+        margin-left: 17vw;
+        z-index: 6666;
+        cursor: pointer;
+        pointer-events: all;
+}
+
+.qualifDiv-qual{
+        width: 250px;
+        height: 200vh;
+        background-color:#370A25;
+        margin-left: 17vw;
+        z-index: 6666;
+        cursor: pointer;
+        pointer-events: all;
+}
+
+.qualifDiv:hover, .qualifDiv-qual:hover, .qualifDiv-serv:hover, .qualifDiv-port:hover{
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.arrows{
+        width: 60px;
+        height: 60px;
+        display: inline;
+        vertical-align: middle;
+        text-indent: 40px;
+}
+
+.aboutPic, .aboutPic-about{
+        width: 170px;
+        height: 300px;
+        position: absolute;
+        top: 5vh;
+        left: 20vw;
+        z-index: 6;
+}
+
+.row, .row-about, .row-serv {
+        display: flex;
+}
+      
+.col, .col-about, .col-serv {
+        flex: 50%;
+}
+
+.aboutDiv, .aboutDiv-about{
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        top: 20vh;
+        background-color: #6B4663;
+        z-index: 8888;
+        cursor: pointer;
+        pointer-events: all;
+}
+
+.aboutDiv:hover, .aboutDiv-about:hover{
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.aboutTitle, .aboutTitle-about{
+        font-family: rosmatika;
+        font-size: 36px;
+        color: black;
+        position: absolute;
+        top: 20vh;
+        left: 42vw;
+        /*left: 40vw;
+        background-color: blue;*/
+}
+
+.aboutTextDiv{
+        position: absolute;
+        top: 60vh;
+        left: 42vw;
+        width: 52vw;
+        height: 134vh;
+        background-color: #F5DEF0;
+        pointer-events: all;
+}
+
+.aboutTextDiv:hover{
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.aboutText{
+        font-family: rosmatika;
+        font-size: 20px;
+        color:#370A25;
+        padding-top: 45px;
+        text-align: justify;
+        width: 44vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+a{
+        pointer-events: all;
+}
+
+#qualArrow{
+        filter: invert(100%) sepia(44%) saturate(1054%) hue-rotate(275deg) brightness(100%) contrast(92%);
+}
+
+#qualArrow:before{
+        content: "\00a0";
+}
+
+#aboutArrow:before{
+        content: "\00a0";
+}
+
+
+.skillDiv{
+        position: absolute;
+        top: 70vh;
+        left: 42vw;
+        z-index: 5555;
+        display: flex;
+
+}
+
+.skillDiv-qual{
+        position: absolute;
+        top: 63vh;
+        left: 42vw;
+        z-index: 5555;
+        display: flex;
+}
+
+.skillIcons{
+        flex: 1;
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+}
+
+.resumeDiv{
+        position: absolute;
+        top: 24vh;
+        width: 100%;
+        height: 22vh;
+        background-color: #6B4663;
+        pointer-events: all;
+        cursor: pointer;
+}
+
+.resumeDiv:hover{
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.resumeTitle{
+        font-family: rosmatika;
+        font-size: 48px;
+        position: absolute;
+        left: 40vw;
+        color:black;
+        top: 1vh;
+}
+ 
+#download{
+        width: 50px;
+        height: 50px;
+        display: inline;
+        vertical-align: middle;
+        text-indent: 40px;
+}
+
+.box1{
+        background-color: #370A25;
+        position: absolute;
+        top: 0vh;
+        left: 17vw;
+        height: 22vh;
+        width: 250px;
+}
+
+.technicalDiv{
+        background-color: #F5DEF0;
+        position: absolute;
+        top: 105vh;
+        width: 100%;
+        height: 70vh;
+        pointer-events: all;
+        z-index: 8888;
+}
+.technicalDiv:hover{
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.techTitle{
+        font-family: rosmatika;
+        font-size: 48px;
+        color:#370A25;
+        position: absolute;
+        top: 0vh;
+        left: 18vw;
+}
+
+.techText{
+        font-family: rosmatika;
+        font-size: 20px;
+        color:#370A25;
+        position: absolute;
+        top: 24vh;
+        left: 18vw;
+        width: 60vw;
+        text-align: justify;
+}
+
+.portTitle, .portTitle-port{
+        font-family: rosmatika;
+        font-size: 36px;
+        text-align: right;
+        color:#370A25;
+        padding-right: 90px;
+        position: relative;
+        left: -10vw;
+        pointer-events: all;
+}
+
+.portfolioDiv, .portfolioDiv-port{
+        position: absolute;
+        top: 95vh;
+        width: 100%;
+        height: 28vh;
+        background-color: #F5DEF0;
+        z-index: 1;
+        cursor: pointer;
+}
+
+.portfolioDiv:hover, .portfolioDiv-port:hover{
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.projectsDiv{
+        background-color: #6B4663;
+        position: absolute;
+        width: 100%;
+        height: 30vh;
+        pointer-events: all;
+}
+
+#topProj{
+        top: 20vh;
+}
+
+#secProj{
+        top: 58vh;
+}
+
+#thirProj{
+        top: 130vh;
+}
+
+.projectsDiv:hover{
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.portImgs{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 4vh;
+        left: 19vw;
+}
+
+.projectTitle{
+        font-family: rosmatika;
+        font-size: 36px;
+        position: absolute;
+        top: -1vh;
+        left: 40vw;
+        color:black;
+}
+
+.projectDesc{
+        font-family: rosmatika;
+        font-size:16px;
+        position: absolute;
+        top: 7vh;
+        left: 39vw;
+        width: 55vw;
+        text-align: justify;
+        color:black;
+}
+
+.resourcesDiv{
+        font-family: rosmatika;
+        font-size: 16px;
+        color:black;
+        position: absolute;
+        top: 2vh;
+        left: 4vw;
+}
+
+.extLinks{
+        display: block;
+        margin-left: 0;
+        color:black;
+}
+.extLinks:hover{
+        color:#F5DEF0;
+}
+
+.gitLinks{
+        font-family: rosmatika;
+        font-size: 16px;
+        color:black;
+        text-decoration: none;
+        pointer-events: all;
+        position: absolute;
+}
+.gitLinks:hover{
+        color:#F5DEF0;
+}
+
+.demoLinks{
+        font-family: rosmatika;
+        font-size: 16px;
+        color:black;
+        text-decoration: none;
+}
+
+.demoLinks:hover{
+        color:#F5DEF0;
+}
+
+#topLink{
+        position: absolute;
+        top: 24vh;
+        left: -5vw;
+}
+
+#secLink{
+        position: absolute;
+        left: -5vw;
+        top: 25vh;
+        pointer-events: all;
+}
+
+#thirLink{
+        position: absolute;
+        left: -5vw;
+        top: 25vh;
+        pointer-events: all;
+}
+
+.demoLinks.instance1{
+        position: absolute;
+        top: 21vh;
+        left: 4vw;
+}
+
+.demoLinks.instance2{
+        position: absolute;
+        top: 21vh;
+        left: 4vw;
+}
+.demoLinks.instance3{
+        position: absolute;
+        top: 21vh;
+        left: 4vw;
+}
+
+#gitLogo{
+        width: 25px;
+        height: 25px;
+        display: inline;
+        vertical-align: middle;
+}
+
+#box1{
+        position: absolute;
+        top: 0;
+        left: 17vw;
+        height: 30vh;
+        width: 250px;
+        background-color: #370A25;
+}
+
+#topPic{
+        position: absolute;
+        left: 19vw;
+}
+
+.serviceTitle, .serviceTitle-serv{
+        font-family: rosmatika;
+        font-size: 48px;
+        color: black;
+        text-align: right;
+        position: absolute;
+        left: 40vw;
+}
+
+#rightServiceArrow{
+        display: none;
+}
+
+.serviceDiv, .serviceDiv-serv{
+        background-color: #6B4663;
+        position: absolute;
+        top: 140vh;
+        height: 40vh;
+        width: 100%;
+        z-index: 7777;
+        pointer-events: all;
+        cursor: pointer;
+}
+
+.serviceDiv:hover, .serviceDiv-serv:hover{
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#portArrow{
+        filter: invert(5%) sepia(43%) saturate(6146%) hue-rotate(310deg) brightness(93%) contrast(96%);
+}
+
+.box{
+        width: 250px;
+        height: 28vh;
+        background-color: #370A25;
+        position: absolute;
+        top: 0vh;
+        margin-left: 17vw;
+        z-index: 9922;
+        cursor: pointer;
+        pointer-events: all;
+}
+
+#servIcon{
+        position: absolute;
+        left: 65vw;
+        top: 5vh;
+        overflow: hidden;
+        max-width: 250px;
+        max-height: 250px;
+        width: 100%;
+        height: 100%;
+}
+
+.serviceTitle{
+        font-family: rosmatika;
+        font-size: 48px;
+        color: black;
+        text-align: right;
+        position: absolute;
+        left: 40vw;
+}
+
+.serviceDiv{
+        background-color: #6B4663;
+        position: absolute;
+        top: 140vh;
+        height: 40vh;
+        width: 100%;
+        z-index: 7777;
+        pointer-events: all;
+        cursor: pointer;
+}
+
+.serviceDiv:hover{
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#servIcon{
+        position: absolute;
+        left: 65vw;
+        top: 5vh;
+        overflow: hidden;
+        max-width: 250px;
+        max-height: 250px;
+        width: 100%;
+        height: 100%;
+}
+
+.servTextDiv{
+        position: absolute;
+        top: 10vh;
+        left: 45vw;
+        width: 45vw;
+        background-color: #6B4663;
+        height: 185vh;
+        pointer-events: all;
+}
+
+#serviceArrow{
+        padding-right: 20px;
+}
+.servTextDiv:hover{
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.servText{
+        font-family: rosmatika;
+        font-size: 20px;
+        margin-top: 6vh;
+        width: 80%;
+        text-align: justify;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color:black;
+}
+
+#cite{
+        color: black;
+}
+
+#cite:hover{
+        color:#F5DEF0
+}
+
+.serviceImgs{
+        display: block;
+        width: 180px;
+        height: 180px;
+        margin-bottom: 10vh;
+        filter: invert(95%) sepia(7%) saturate(974%) hue-rotate(277deg) brightness(99%) contrast(94%);
+}
+
+.serviceImgDiv{
+        position: absolute;
+        top: 18vh;
+        left: 20vw;
+}
+
+#contactLink, #contactLink-about{
+        color:black;
+        font-family: rosmatika;
+        font-size: 26px;
+        position: absolute;
+        top: 4vh;
+        left: 41vw;
+}
+
+#contactLink:hover, #contactLink-about:hover{
+        color:#F5DEF0;
+}
+
+
+.toggleDiv{
+        position: absolute;
+        top: 14vh;
+        left: 94vw;
+        z-index: 9998;
+        pointer-events: all;
+}
+
+.switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color:#370A25;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #2196F3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+#remFirst{
+        display: none;
+}

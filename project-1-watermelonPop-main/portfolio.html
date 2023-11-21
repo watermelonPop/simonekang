@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link class="styleSheet" rel="stylesheet" type="text/css"/>
+</head>
+<body onload="loadStyle()">
+
+        <div class="fixed-top">
+                <div class="navbar">
+                        <a class="navLink" href="about.html">ABOUT</a>
+                        <a class="navLink" href="qualifications.html">SKILLS</a>
+                        <a id="title" href="index.html">SIMONE KANG</a>
+                        <a class="navLink" href="portfolio.html">PORTFOLIO</a>
+                        <a class="navLink" href="service.html">SERVICE</a>
+                </div>
+                <div class="wave">
+                </div>
+        </div>
+
+
+
+        <div class="toggleDiv">
+                <label class="switch">
+                        <input id="themeChange" type="checkbox" onchange="toggleStyleSheet()">
+                        <span class="slider round"></span>
+                </label>
+        </div>
+
+
+
+        <div class="scrollable">
+                <div class="qualifDiv-port">
+                </div>
+
+
+                <div class="portfolioDiv-port" id="portLink-port">
+                        <p class="portTitle-port">
+                                PORTFOLIO<br>&<br>
+                                PROJECTS
+                        </p>
+                        <div class="box"></div>
+                </div>
+
+
+                <div class="projectsDiv" id="topProj">
+                        <div class="row">
+                                <div class="col-about instance1" id="box1-about">
+                                        <img id="topPic" src="imgs/replaceColor.png" class="portImgs"/>
+                                </div>
+                                <div class="col-about instance2">
+                                        <p class="projectTitle">
+                                                REPLACE COLOR
+                                        </p>
+                                        <p class="projectDesc">
+                                                HTML/CSS/Javascript project that allows the user to change all pixels of a specific color to a custom color in an image. Includes capability for the user to upload an image(works with png and jpg), and a color wheel function for the user to choose the new color. The user clicks on a pixel of the color they want to replace, and the program replaces all pixels of that color to whichever new color they’ve chosen. There is a download button and a revert button at the bottom. 
+                                        </p>
+                                        <div class="resDiv">
+                                                <div class="resourcesDiv">
+                                                        <p class="resources">resources used:</p>
+                                                        <a class="extLinks instance1 link1" href="https://getbootstrap.com/">bootstrap</a>
+                                                        <a class="extLinks instance1 link2" href="https://coloris.js.org/">coloris</a>
+                                                        <a class="extLinks instance1 link3" href="https://fontawesome.com/">fontawesome</a>
+                                                </div>
+                                                <div class="otherLinksDiv">
+                                                        <a class="demoLinks instance1" href="https://watermelonpop.github.io/replace-color/">see demo</a>
+                                                        <a id="topLink" class="gitLinks" href="https://github.com/watermelonPop/replace-color">github &ensp;<object id = "gitLogo" data="icons/ghLogo.svg" type="image/svg+xml"></object></a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+
+                <div class="projectsDiv" id="secProj">
+                        <div class="row">
+                                <div class="col-about instance3">
+                                        <img src="imgs/colorPalette.png" class="portImgs"/>
+                                </div>
+                                <div class="col-about instance4">
+                                        <p class="projectTitle">
+                                                COLOR PALETTE
+                                        </p>
+                                        <p class="projectDesc">
+                                                HTML/CSS/Javascript project that lets users create a functional color palette. The program loads with 3 cards of random colors already in the palette. Using the generate button, the user can generate random colors, and using the add button, the user can add more color cards to the palette. Each color card comes with the color’s name, hex code, which is attached to the color wheel function, a lock button, and a delete button. Lastly, each card has a shade selector above it, which allows the user to filter the random colors to only be shades of red, etc.
+                                        </p>
+                                        <div class="resDiv">
+                                                <div class="resourcesDiv">
+                                                        <p class="resourcesTitle">resources used:</p>
+                                                        <a class="extLinks instance2 link1" href="https://getbootstrap.com/">bootstrap</a>
+                                                        <a class="extLinks instance2 link2" href="https://coloris.js.org/">coloris</a>
+                                                        <a class="extLinks instance2 link3" href="https://fontawesome.com/">fontawesome</a>
+                                                </div>
+                                                <div class="otherLinksDiv">
+                                                        <a class="demoLinks instance2" href="https://watermelonpop.github.io/color-palette/">see demo</a>
+                                                        <a id="secLink" class="gitLinks" href="https://github.com/watermelonPop/color-palette">github &ensp;<object id = "gitLogo" data="icons/ghLogo.svg" type="image/svg+xml"></object></a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+
+                <div class="projectsDiv" id="thirProj">
+                        <div class="row">
+                                <div class="col-about instance5">
+                                        <img src="imgs/calc.png" class="portImgs"/>
+                                </div>
+                                <div class="col-about instance6">
+                                        <p class="projectTitle" id="specTit">
+                                                CALCULATOR
+                                        </p>
+                                        <p class="projectDesc" id="specDesc">
+                                                Unfinished HTML/CSS/Javascript project that functions as an advanced calculator, with the ability to switch between themes for the calculator. 
+                                        </p>
+                                        <div class="resDiv">
+                                                <div class="resourcesDiv">
+                                                        <p class="resourcesTitle" id="specRes">resources used:</p>
+                                                </div>
+                                                <div class="otherLinksDiv">
+                                                        <a id="specOth1" class="demoLinks instance3" href="https://watermelonpop.github.io/calculator/">see demo</a>
+                                                        <a id="thirLink" class="gitLinks" href="https://github.com/watermelonPop/calculator">github &ensp;<object class = "black" id = "gitLogo" data="icons/ghLogo.svg" type="image/svg+xml"></object></a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                
+        </div>
+
+
+
+        <div class="bottomWave">
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
