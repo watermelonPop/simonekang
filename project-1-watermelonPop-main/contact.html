@@ -1,111 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <style>
-        /* Add CSS styles for the fixed navbar and text font */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
-        }
-
-        header {
-            background-color: #F5DEF0; /* Set background color to #F5DEF0 */
-            color: #000; /* Text color */
-            text-align: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 10px 0;
-        }
-
-        header a {
-            color: #000;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-            font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
-        }
-
-        /* Additional CSS for the main content */
-        main {
-            margin-top: 60px; /* Ensure content is below the fixed navbar */
-            text-align: center; /* Center the content within the main section */
-        }
-
-        /* Split the contact information section into two equal columns */
-        .contact-section {
-            background-color: #6B4663; /* Set background color to #6B4663 */
-            padding: 20px;
-        }
-
-        .contact-section h2 {
-            background-color: #6B4663; /* Set background color of the title to match the div */
-            padding: 10px;
-            color: #370A25; /* Text color in the contact information section */
-        }
-
-        .contact-columns {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .contact-column {
-            flex: 1;
-            text-align: left;
-            color: #370A25; /* Text color in the contact information section */
-        }
-
-        /* Style links in the contact information section */
-        .contact-column a {
-            color: #370A25;
-            text-decoration: none;
-        }
-
-        .contact-column a:hover {
-            color: #F5DEF0; /* Hover color for links */
-        }
-    </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simone Kang</title>
+        <link class="styleSheet" rel="stylesheet" type="text/css"/>
 </head>
-<body>
-    <header>
-        <!-- Centered name and navigation links -->
-        <h1>SIMONE KANG</h1>
-        <nav>
-            <a href="about.html">About</a>
-            <a href="qualifications.html">Qualifications</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="service.html">Services</a>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="contact-section">
-            <h2>Contact Information</h2>
-            <div class="contact-columns">
-                <div class="contact-column">
-                    <p>Email: <a href="mailto:sk21007@tamu.edu">sk21007@tamu.edu</a></p>
-                    <p>Phone: <a href="tel:+18183835723">(818)-383-5723</a></p>
+<body onload="loadStyle()">
+        <div class="fixed-top">
+                <div class="navbar">
+                        <a class="navLink" href="about.html">ABOUT</a>
+                        <a class="navLink" href="qualifications.html">SKILLS</a>
+                        <a id="title" href="index.html">SIMONE KANG</a>
+                        <a class="navLink" href="portfolio.html">PORTFOLIO</a>
+                        <a class="navLink" href="service.html">SERVICE</a>
                 </div>
-                <div class="contact-column">
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/simone-kang-65285228b/" target="_blank">Simone Kang</a></p>
-                    <p>GitHub: <a href="https://github.com/watermelonPop" target="_blank">@watermelonPop</a></p>
+                <div class="wave">
+                </div>
+        </div>
+
+
+
+        <div class="toggleDiv">
+                <label class="switch">
+                        <input id="themeChange" type="checkbox" onchange="toggleStyleSheet()">
+                        <span class="slider round"></span>
+                </label>
+        </div>
+
+
+
+        <div class="scrollable">
+            <div class="contactHorizontalDiv contactBlock">
+                <p class="contactTitle">Contact Me</p>
+            </div>
+            <div class="contactInfoDiv contactInfoBlock">
+                <div class="contactInfo">
+                    <a class="contactLink">Email: sk21007@tamu.edu</a><br>
+                    <a class="contactLink">Phone: (818)-383-5723</a><br>
+                    <a class="contactLink" href="https://www.linkedin.com/in/simone-kang-65285228b/">LinkedIn: Simone Kang</a><br>
+                    <a class="contactLink" href="https://github.com/watermelonPop">GitHub: @watermelonPop</a><br>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
 
-    <!-- Added text at the bottom of the page -->
-    <footer>
-        <p>chatgpt original prompt: Can you generate a simple html page with the heading CONTACT ME?</p>
-    </footer>
+
+
+        <div class="bottomWave-contact">
+        </div>
+
+        <script src="script.js"></script>
 </body>
 </html>

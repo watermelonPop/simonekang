@@ -31,6 +31,22 @@ body{
         align-self: center;
 }
 
+.scrollable-port{
+        width: 85%;
+        max-width: 1000px;
+        min-width: 1000px;
+        height: 1000px;
+        display: grid;
+        grid-template-columns: 125px 125px 125px 125px 125px 125px;
+        grid-template-rows: 125px 125px 125px 125px 125px 125px 125px 125px 125px;
+        row-gap: 50px;
+        column-gap: 50px;
+        position: absolute;
+        top: 24vh;
+        justify-self: center;
+        align-self: center;
+}
+
 .navbar{
         background-color:#F6838C;
         height: 8vh;
@@ -53,6 +69,30 @@ body{
         color: black;
         text-decoration: none;
         cursor: pointer;
+}
+
+.contactTitle{
+        font-family: sweetHome;
+        font-size: 40px;
+        color: #FEF8E6;
+        text-align: center;
+}
+
+.contactInfo{
+        width: 100%;
+        height: 100%;
+}
+
+.contactLink{
+        font-family: lemonMilk;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 300%;
+        color: black;
+}
+
+.contactLink:hover{
+        color: #F6838C;
 }
 
 #title:hover{
@@ -134,7 +174,27 @@ a.navLink:hover{
         padding: 50px;
 }
 
-.pinkBlock:hover, .pinkBlock-about:hover{
+.contactBlock{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-color: #F6838C;
+        border-radius: 15.2px;
+        padding: 50px;
+}
+
+.contactInfoBlock{
+        grid-column-start: 3;
+        grid-column-end: 8;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-color: #FFBEC5;
+        border-radius: 15.2px;
+        padding: 50px;
+}
+
+.pinkBlock:hover, .pinkBlock-about:hover, .contactBlock:hover, .contactInfoBlock:hover{
         box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -398,6 +458,14 @@ a.navLink:hover{
         background-color:#FFBEC5;
 }
 
+#fourProj{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 7;
+        grid-row-end: 10;
+        background-color: #A2D18D;
+}
+
 .portImgs{
         width: 150px;
         height: 150px;
@@ -442,6 +510,12 @@ a.navLink:hover{
         left: 525px;
 }
 
+.col-about.instance7{
+        position: absolute;
+        top: 1350px;
+        left: 0px;
+}
+
 #gitLogo{
         width: 25px;
         height: 25px;
@@ -449,7 +523,7 @@ a.navLink:hover{
         vertical-align: middle;
 }
 
-.col-about.instance2, .col-about.instance4, .col-about.instance6{
+.col-about.instance2, .col-about.instance4, .col-about.instance6, .col-about.instance8{
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
@@ -947,3 +1021,26 @@ border-radius: 50%;
         background-size: cover;
         background-repeat: no-repeat;
 }
+
+.bottomWave-contact:before{
+        content: "";
+        position: absolute;
+        top: 1200px;
+        width: 100%;
+        height: 14vh;
+        background: url("imgs/bottom.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.bottomWave-port:before{
+        content: "";
+        position: absolute;
+        top: 2000px;
+        width: 100%;
+        height: 14vh;
+        background: url("imgs/bottom.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+
