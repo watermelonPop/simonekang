@@ -466,6 +466,14 @@ a.navLink:hover{
         background-color: #A2D18D;
 }
 
+#fiveProj{
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 7;
+        grid-row-end: 10;
+        background-color:#F6838C;
+}
+
 .portImgs{
         width: 150px;
         height: 150px;
@@ -516,6 +524,12 @@ a.navLink:hover{
         left: 0px;
 }
 
+.col-about.instance9{
+        position: absolute;
+        top: 1350px;
+        left: 525px;
+}
+
 #gitLogo{
         width: 25px;
         height: 25px;
@@ -523,7 +537,7 @@ a.navLink:hover{
         vertical-align: middle;
 }
 
-.col-about.instance2, .col-about.instance4, .col-about.instance6, .col-about.instance8{
+.col-about.instance2, .col-about.instance4, .col-about.instance6, .col-about.instance8, .col-about.instance10{
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
